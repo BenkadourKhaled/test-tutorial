@@ -1,5 +1,11 @@
 package dz.benkadour.khaled;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.MethodSource;
+
+import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -43,22 +49,42 @@ class CalculatorTest {
         assertEquals(expectedResult, actualResult, "4/2 did not produce 2");
     }
 
-    @Test
-    @DisplayName("Division By Zero")
-    @Disabled("TODO : Still Need To Work On It")
-    void testIntegerSubtraction_WhenDividendIsDividedByZero_ShouldThrowArithmeticException() {
-        System.out.println("Running Division By Zero");
-        fail("Not Implemented yet");
-    }
+    //@Disabled("TODO : Still Need To Work On It")
 
     @Test
-    @DisplayName("Integer Subtraction")
-    void TestIntegerSubtraction() {
-        int a = 10;
-        int b = 5;
-        int expectedResult = 5;
-        int actualResult = calculator.subtraction(a, b);
-        assertEquals(expectedResult, actualResult, a + " - " + b + "did not produce : " + expectedResult);
+    @DisplayName("Division By Zero")
+    void testIntegerSubtraction_WhenDividendIsDividedByZero_ShouldThrowArithmeticException() {
+        System.out.println("Running Division By Zero");
+        // Arrange
+        int dividend = 4;
+        int divisor = 0;
+        String expectedExceptionMessage = "/ By Zero ";
+        // Act & Assert
+        ArithmeticException actualException = assertThrows(ArithmeticException.class, () -> {
+            // Act
+            calculator.integerDivision(dividend, divisor);
+        }, "Division By Zero should throw Arithmetic Exception");
+        // Assert
+        assertEquals(expectedExceptionMessage, actualException.getMessage(), " Unexpected exception message");
     }
+
+    @DisplayName("Test Integer Subtraction [minuend, subtrahend, expectedResult]")
+    //@Test
+    @ParameterizedTest
+    //@MethodSource()
+    @CsvSource({"33, 1, 32", "24, 1, 23", "54, 1, 53"})
+    void integerSubtraction(int minuend, int subtrahend, int expectedResult) {
+        int actualResult = calculator.subtraction(minuend, subtrahend);
+        assertEquals(expectedResult, actualResult, minuend + " - " + subtrahend + "did not produce : " + expectedResult);
+    }
+
+    /*public static Stream<Arguments> integerSubtraction() {
+        return Stream.of(
+                Arguments.of(33, 1, 32),
+                Arguments.of(54, 1, 53),
+                Arguments.of(24, 1, 23)
+        );
+    }
+    */
 
 }
