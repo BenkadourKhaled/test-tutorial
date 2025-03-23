@@ -1,4 +1,4 @@
-package dz.benkadour.khaled;
+package dz.benkadour.khaled.principales;
 
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
@@ -10,32 +10,31 @@ import org.junit.jupiter.api.TestMethodOrder;
  * @Author : KHALED_BENKADOUR
  * @Email : BENKKADOUR.KHALED@GMAIL.COM
  * @DATE : (23/03/2025)
- * @TIME : (11:31)
+ * @TIME : (11:34)
  * @Project_Name : TESTING-LEARNING
  */
 
-@TestMethodOrder(MethodOrderer.Random.class)
-public class MethodOrderedRandomlyTest {
+@TestMethodOrder(MethodOrderer.MethodName.class)
+public class MethodsOrderedByNameTest {
 
     @Test
     void testA() {
-        System.out.println("Running Test A");
+        System.out.println("Running Test D");
     }
 
     @Test
     void testB() {
-        System.out.println("Running Test B");
-    }
-
-    @Test
-    void testC() {
         System.out.println("Running Test C");
     }
 
     @Test
-    void testD() {
-        System.out.println("Running Test D");
+    void testC() {
+        System.out.println("Running Test B");
     }
 
+    @Test
+    void testD() {
+        System.out.println("Running Test A");
+    }
 
 }
