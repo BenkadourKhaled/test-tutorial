@@ -15,26 +15,26 @@ import org.junit.jupiter.api.TestMethodOrder;
  */
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
-public class MethodsOrdredByNameTest {
+public class MethodsOrderedByNameTest {
 
     @Test
     void testA() {
-        System.out.println("Running Test A");
+        System.out.println("Running Test D");
     }
 
     @Test
     void testB() {
-        System.out.println("Running Test B");
-    }
-
-    @Test
-    void testC() {
         System.out.println("Running Test C");
     }
 
     @Test
+    void testC() {
+        System.out.println("Running Test B");
+    }
+
+    @Test
     void testD() {
-        System.out.println("Running Test D");
+        System.out.println("Running Test A");
     }
 
 }
