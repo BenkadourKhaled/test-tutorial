@@ -1,9 +1,7 @@
 package dz.benkadour.khaled.principales;
-
 import org.junit.jupiter.api.*;
-
 /**
- * Create By ${} on 31/10/2024
+ * Create By ${_} on 31/10/2024
  *
  * @Author : KHALED_BENKADOUR
  * @Email : BENKKADOUR.KHALED@GMAIL.COM
