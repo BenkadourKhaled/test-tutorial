@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: TestingAllLayerSpringBoot
+  jpa:
+    show-sql: true
