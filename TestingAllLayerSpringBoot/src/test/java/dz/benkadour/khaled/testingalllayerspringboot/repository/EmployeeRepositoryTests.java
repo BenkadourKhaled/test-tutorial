@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -86,7 +87,22 @@ public class EmployeeRepositoryTests {
         assertThat(find.getId()).isGreaterThan(0);
     }
 
+    @Test
+    @DisplayName("Find Employee By Email")
+    public void givenEmployeeEmail_whenFindByEmail_thenReturnEmployeeObject() {
+        // Given - precondition or setup
+        Employee employee = Employee.builder()
+                .firstName("khaled")
+                .lastName("BENKADOUR")
+                .email("BENKKADOUR.KHALED@gmail.com")
+                .build();
+        employeeRepository.save(employee);
+        // When - action or the behavior that we are going test
+        Employee employeeDb = employeeRepository.findByEmail(employee.getEmail()).get();
+        // Then - verify the output
+        assertThat(employeeDb.getEmail()).isNotEmpty();
 
+    }
 
 
 }
