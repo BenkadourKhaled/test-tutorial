@@ -1,0 +1,77 @@
+[33mcommit a65792b23e2a23a99ffaf935ddbc4e2ebbbd7d96[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: BENKADOUR Khaled <benkkadour.khaled@gmail.com>
+Date:   Sun Apr 6 09:13:32 2025 +0100
+
+    Tester Repository
+
+[33mcommit 730f680fcad95b21162f0bd475617344450c4698[m
+Author: BENKADOUR Khaled <benkkadour.khaled@gmail.com>
+Date:   Thu Apr 3 10:00:54 2025 +0100
+
+    Test Find By Add for the Repository Layer
+
+[33mcommit 6af3478b2ab164dc061641aa6bf58fffeff0e514[m
+Author: BENKADOUR Khaled <benkkadour.khaled@gmail.com>
+Date:   Mon Mar 24 14:09:10 2025 +0100
+
+    TDD TESTING
+
+[33mcommit 1ff35414bdb8638a3af7cfa19ffada132f21f40d[m
+Author: BENKADOUR Khaled <benkkadour.khaled@gmail.com>
+Date:   Mon Mar 24 12:10:01 2025 +0100
+
+    TEST Driven Developpement
+
+[33mcommit fd9bc0d9c190411eb18c319c6edd6459743b6cbe[m
+Author: BENKADOUR Khaled <benkkadour.khaled@gmail.com>
+Date:   Sun Mar 23 13:08:29 2025 +0100
+
+    Changing test instance LifeCycle exemple
+
+[33mcommit a689a4332b383583bdd6807063a110fff91fd8bc[m
+Author: BENKADOUR Khaled <benkkadour.khaled@gmail.com>
+Date:   Sun Mar 23 12:21:16 2025 +0100
+
+    Order of Unit test Classes
+
+[33mcommit a9d12f7952ccd0a2456968e7b3e0d44deefd7742[m
+Author: BENKADOUR Khaled <benkkadour.khaled@gmail.com>
+Date:   Sun Mar 23 11:38:48 2025 +0100
+
+    namd methods
+
+[33mcommit 3f9c4810946e7835b193e829baef7ddd5af397f9[m
+Author: BENKADOUR Khaled <benkkadour.khaled@gmail.com>
+Date:   Sun Mar 23 11:35:59 2025 +0100
+
+    Order Execution test (Random, Name Methods)
+
+[33mcommit 22775b2b42261fcc3371f406749049fc7f31de48[m
+Author: BENKADOUR Khaled <benkkadour.khaled@gmail.com>
+Date:   Thu Mar 20 14:22:31 2025 +0100
+
+    The paramitrized testing
+
+[33mcommit 182ec1addb24c370b2594e791190b17d28f43379[m
+Author: benkadourk <benkadourk@cnas.dz>
+Date:   Thu Mar 20 11:59:29 2025 +0100
+
+    The basics of Testing with Sprig boot
+
+[33mcommit 86ebcfef8b7aa9fd5432a0f72ae99dbf6009a79a[m
+Author: benkadourk <benkadourk@cnas.dz>
+Date:   Wed Mar 19 14:50:26 2025 +0100
+
+    the first lesson in Testing
+
+[33mcommit 1d724b63d1eb48085e751182b3d10188f27c4085[m
+Author: BenkadourKhaled <100595413+BenkadourKhaled@users.noreply.github.com>
+Date:   Thu Mar 20 11:58:30 2025 +0100
+
+    Update README.md
+
+[33mcommit 0954b21f47e39ef983881c5683a151b49e5b8dbe[m
+Author: BenkadourKhaled <100595413+BenkadourKhaled@users.noreply.github.com>
+Date:   Thu Mar 20 11:57:34 2025 +0100
+
+    Initial commit

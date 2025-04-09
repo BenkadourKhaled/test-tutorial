@@ -13,7 +13,7 @@ import lombok.*;
  * @TIME : (14:58)
  * @Project_Name : TESTING-LEARNING
  */
-@Setter @Getter @AllArgsConstructor @NoArgsConstructor @Builder
+@Setter @Getter @AllArgsConstructor @NoArgsConstructor @Builder @ToString
 @Entity @Table(name = "EMPLOYEE")
 public class Employee {
 
