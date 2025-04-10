@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
  * @TIME : (13:56)
  * @Project_Name : TESTING-LEARNING
  */
-@RestControllerAdvice
+@RestController
 @RequestMapping("/api/employees")
 public class EmployeeController {
 
